@@ -31,7 +31,7 @@ def fun():
       data = data[['Date', 'Close']]
       data.columns = ['Date', 'Close']
       data['Stock'] = i
-      new_df = new_df.append(data)
+      new_df = pd.concat([new_df, data], axis=0)
   new_df = new_df.pivot(index='Date', columns='Stock', values='Close')
   new_df = new_df.dropna()
   new_df.reset_index(inplace=True)
@@ -90,7 +90,7 @@ def fun():
     data1 = data1[['Date', 'Close']]
     data1.columns = ['Date', 'Close']
     data1['Crypto'] = i
-    new_df1 = new_df1.append(data1)
+    new_df1 = pd.concat([new_df1, data1], axis=0)
   new_df1 = new_df1.pivot(index='Date', columns='Crypto', values='Close')
   new_df1 = new_df1.dropna()
   new_df1.reset_index(inplace=True)
