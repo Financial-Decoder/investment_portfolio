@@ -1,0 +1,6 @@
+PyPortfolioOpt
+pulp
+yfinance
+pandas
+numpy
+matplotlib
