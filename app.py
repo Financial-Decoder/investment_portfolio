@@ -12,8 +12,8 @@ from pypfopt.discrete_allocation import DiscreteAllocation, get_latest_prices
 st.set_page_config(page_title="Portfolio Creator", page_icon=":chart_with_upwards_trend:")
 st.header("Portfolio Creator")
 st.sidebar.header("Portfolio Configuration")
-portfolio_val = st.sidebar.number_input("Enter Investment Amount:" ,min_value=1000, max_value=100000, step=1000)
-# portfolio_val = int(st.sidebar.selectbox("Select Investment Amount " ,('1000','2000','3000','15000','45000'))
+#portfolio_val = st.sidebar.number_input("Enter Investment Amount:" ,min_value=1000, max_value=100000, step=1000)
+portfolio_val = int(st.sidebar.selectbox("Select Investment Amount " ,('1000','2000','3000','15000','45000'))
 risk = st.sidebar.selectbox("Select your risk level", ('low', 'medium', 'high'))
 def fun():
   START = "2023-01-01"
