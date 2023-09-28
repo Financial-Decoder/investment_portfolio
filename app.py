@@ -10,8 +10,6 @@ from datetime import date
 from pypfopt.discrete_allocation import DiscreteAllocation, get_latest_prices
 import yfinance as yf
 
-# Set the cache directory to a location where you have write access.
-yf.config.cache_directory = "/path/to/cache/directory"
 
 st.set_page_config(page_title="Portfolio Creator", page_icon=":chart_with_upwards_trend:")
 st.header("Portfolio Creator")
